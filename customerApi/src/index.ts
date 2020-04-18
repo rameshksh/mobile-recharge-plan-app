@@ -17,11 +17,11 @@ import { TransactionService } from "./services/TransactionService";
 
 createConnection({
     type: "mssql",
-    host: 'RKUMAR11',
-    username: 'ramesh.kumar',
+    host: '',
+    username: '',
     password: '',
     database: 'CustomerDB',
-    domain: 'corp.neudesic.net',
+    domain: '',
     schema: 'dbo',
     extra: {
         driver: windowsDriver,
@@ -62,5 +62,5 @@ function buildServer() {
         app.use(bodyParser.json());
 
         console.log("Customer API is up and running on port 3001...");
-    }).build().listen(3001);    
+    }).build().listen(3001);
 }

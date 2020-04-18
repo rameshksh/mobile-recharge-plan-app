@@ -14,11 +14,11 @@ import { Plan } from "./entities/Plan";
 
 createConnection({
     type: "mssql",
-    host: 'RKUMAR11',
-    username: 'ramesh.kumar',
+    host: '',
+    username: '',
     password: '',
     database: 'MobilePlanDB',
-    domain: 'corp.neudesic.net',
+    domain: '',
     schema: 'dbo',
     extra: {
         driver: windowsDriver,
