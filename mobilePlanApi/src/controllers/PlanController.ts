@@ -17,10 +17,8 @@ export class PlanController extends BaseHttpController {
 
   @httpGet('/')
   public getPlans(request: Request): Promise<Plan[]> {
-    console.log(request);
-
     if (request.query) {
-      return this._planService.searchPlans(request.queryString);
+      return this._planService.searchPlans(request.query);
     }
 
     return this._planService.getPlans();

@@ -13,31 +13,30 @@ export class Plan {
     @Column("text")
     name: string;
 
-    @Column("text")
+    @Column("integer")
     planTypeId: string;
 
-    @Column()
+    @Column("integer")
     amount: number;
 
-    @Column()
+    @Column("integer")
     validity: number;
 
-    @Column()
-    isActive: number;
+    @Column("bit")
+    isActive: boolean;
 
-    @Column()
+    @Column("integer")
     data: number;
 
-    @Column()
-    dataMesurementUnit: number;
+    @Column("text")
+    dataMesurementUnit: string;
 
-    @Column()
+    @Column("integer")
     talkTime: number;
 
-    @Column()
+    @Column("integer")
     talkTimeValidity: number;
 
-    @Column()
+    @Column("integer")
     dataValidity: number;
-
 }

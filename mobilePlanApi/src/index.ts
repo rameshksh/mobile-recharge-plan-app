@@ -9,11 +9,6 @@ import { InversifyExpressServer } from 'inversify-express-utils';
 import "./controllers/PlanController";
 import TYPES from "./constants/types";
 
-const client = require("mssql/msnodesqlv8");
-
-const connectionString = "server=.;Database=MobilePlanDB;Trusted_Connection=Yes;Driver=msnodesqlv8";
-const sql = "SELECT * FROM dbo.MobilePlans";
-
 import windowsDriver = require('mssql/msnodesqlv8');
 import { Plan } from "./entities/Plan";
 
@@ -36,23 +31,11 @@ createConnection({
         useUTC: true,
     }
 }).then(connection => {
-    console.log('SQL Connected');
+    console.log('MobilePlanDB Connected....');
     buildServer();
 }).catch(error => {
     console.log(error);
 });
-
-const run = async () => {
-    const pool = new client.ConnectionPool(connectionString);
-    await pool.connect();
-    buildServer();
-    const result = await pool.request().query(sql);
-
-    console.log(result);
-    pool.close();
-}
-
-//run();
 
 function buildServer() {
 
@@ -73,8 +56,6 @@ function buildServer() {
 
         app.use(bodyParser.json());
 
-        console.log("Express application is up and running on port 3000...");
+        console.log("Mobile Plan API is up and running on port 3000...");
     }).build().listen(3000);
-
-    console.log("Database Connection succesful...");
 }
