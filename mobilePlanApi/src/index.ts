@@ -16,7 +16,7 @@ createConnection({
     type: "mssql",
     host: 'RKUMAR11',
     username: 'ramesh.kumar',
-    password: 'Welcome@33',
+    password: '',
     database: 'MobilePlanDB',
     domain: 'corp.neudesic.net',
     schema: 'dbo',
