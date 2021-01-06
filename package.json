@@ -6,7 +6,7 @@
       "@types/chai": "^4.2.11",
       "@types/mocha": "^5.2.7",
       "@types/node": "^8.10.60",
-      "axios": "^0.19.2",
+      "axios": "^0.21.1",
       "chai": "^4.2.0",
       "inversify": "^5.0.1",
       "inversify-express-utils": "^6.3.2",
