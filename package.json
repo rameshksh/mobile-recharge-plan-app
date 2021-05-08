@@ -23,7 +23,7 @@
       "mongodb": "^3.5.6",
       "mssql": "^4.3.8",
       "reflect-metadata": "^0.1.10",
-      "typeorm": "0.2.20"
+      "typeorm": "0.2.25"
    },
    "scripts": {
       "start": "npm run plan-service",
