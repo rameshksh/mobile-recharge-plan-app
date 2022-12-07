@@ -9,7 +9,7 @@
       "axios": "^0.19.2",
       "chai": "^4.2.0",
       "inversify": "^5.0.1",
-      "inversify-express-utils": "^6.3.2",
+      "inversify-express-utils": "^6.4.3",
       "mocha": "^6.2.3",
       "msnodesqlv8": "^1.1.1",
       "request": "^2.88.2",
@@ -18,8 +18,8 @@
       "typescript": "3.3.3333"
    },
    "dependencies": {
-      "body-parser": "^1.18.1",
-      "express": "^4.15.4",
+      "body-parser": "^1.20.1",
+      "express": "^4.18.2",
       "mongodb": "^3.5.6",
       "mssql": "^4.3.8",
       "reflect-metadata": "^0.1.10",
